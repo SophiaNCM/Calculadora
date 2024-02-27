@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="../scss/index.css">
+        <script language = "javascript" src="../js/calculadora.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="text-white">CALCULADORA</h1>
+        </header>
+        <article class="container-fluid">
+            <section id="Estrutura_Calculadora">
+                <p id="Mostrar_Conta" class="text-dark"></p>
+                <button id="limpar" onclick="limpar()">C</button>
+                <button id="apagar" onclick="apagar()">></button>
+                <button id="parentese" onclick="insert('(')">(</button>
+                <button id="parentese1" onclick="insert(')')">)</button>
+                </br>
+                <button id="7" onclick="insert('7')">7</button>
+                <button id="8"  onclick="insert('8')">8</button>
+                <button id="9"  onclick="insert('9')">9</button>
+                <button id="mais" onclick="insert('+')">+</button>
+                </br>
+                <button id="4"  onclick="insert('4')">4</button>
+                <button id="5"  onclick="insert('5')">5</button>
+                <button id="6"  onclick="insert('6')">6</button>
+                <button id="multiplicação" onclick="insert('X')">X</button>
+                </br>
+                <button id="1"  onclick="insert('1')">1</button>
+                <button id="2"  onclick="insert('2')">2</button>
+                <button id="3"  onclick="insert('3')">3</button>
+                <button id="menos" onclick="insert('-')">-</button>
+            </br>
+            <button id="0"  onclick="insert('0')">0</button>
+            <button id="ponto" onclick="insert('.')">.</button>
+            <button id="igual"onclick="calcular()">=</button>
+            <button id="divisao" onclick="insert('/')">/</button>
+            
+           
+            </section>
+        </article>
+    </body>
+</html>
